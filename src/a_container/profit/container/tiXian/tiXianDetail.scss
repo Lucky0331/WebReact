@@ -1,0 +1,79 @@
+.page-tixiandetail {
+  .step-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0.5rem 15vw 1.6rem;
+    margin-bottom: 0.2rem;
+    .step-icon {
+      width: 0.44rem;
+      height: 0.44rem;
+    }
+    .step {
+      position: relative;
+      flex: none;
+      width: 0.44rem;
+      .info {
+        position: absolute;
+        width: 30vw;
+        top: 0.64rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        & > div:first-child {
+          font-size: 0.32rem;
+        }
+        & > div:last-child {
+          margin-top: 0.1rem;
+          font-size: 0.24rem;
+          color: #888;
+        }
+      }
+    }
+    .line1 {
+      height: 2px;
+      flex: auto;
+      background-color: #888888;
+    }
+    .line2 {
+      height: 2px;
+      flex: auto;
+      background-color: #53a1ff;
+    }
+  }
+
+  .info-box {
+    padding: 0.2rem;
+    background-color: #fff;
+    margin-top: 0.2rem;
+    & > div {
+      padding: 0.1rem 0;
+      & > div {
+        &:first-child {
+          color: #aaa;
+        }
+        &:last-child {
+          color: #25292e;
+        }
+      }
+    }
+  }
+  .foot-info {
+    padding: 0.2rem;
+    font-size: 0.28rem;
+    color: #888;
+    text-align: center;
+  }
+  .mt {
+    margin-top: 0.2rem;
+  }
+  .am-list-body {
+    &:before {
+      display: none !important;
+    }
+    &::after {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-cn" id="this-html">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <%= manifest %>
+    <%= dll %>
+</head>
+<body>
+<div id="app-root"></div>
+<script>
+    function re(){
+        if(!sessionStorage.getItem('flashCache')){
+            sessionStorage.setItem("flashCache","t");
+            window.location.reload(true);
+        }
+    }
+</script>
+<script async="async" type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.4&key=1f9e91800f0d1dc4810f00809ffc6ddd"></script>
+<script async="async" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script async="async" src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+</body>
+</html>

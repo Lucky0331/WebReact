@@ -1,0 +1,114 @@
+//跟字体50px
+.shop-active-page {
+  background-size: 100%;
+  background-image: url(../../../../assets/shop/JD.jpg);
+  overflow:scroll;
+  height: 27rem;
+  .top-code{
+    position: relative;
+    width: 100%;
+    .aboutHRA{
+      text-align: right;
+      font-size: 0.23rem;
+      margin-top: 0.4rem;
+      .aClass{
+        div{
+          position: relative;
+          display:inline-block;
+          width: 2rem;
+        }
+        img{
+          height:0.28rem;
+          position:absolute;
+          left:0;
+          top:0;
+        }
+        span{
+          color:#fff;
+          display:inline-block;
+          height:0.28rem;
+          line-height: 0.29rem;
+          font-size: 0.26rem;
+          position:absolute;
+          left:0.35rem;
+          top:0;
+        }
+      }
+    }
+    input{
+      height:0.95rem;
+      line-height: 0.95rem;
+      font-size:0.25rem;
+      padding-left: 8px;
+      width:68%;
+      float: left;
+      border:solid 1px #ccc;
+      border-radius: 4px;
+      margin-left: 3%;
+    }
+    button{
+      height:1rem;
+      line-height: 1rem;
+      float: right;
+    }
+    a.am-button::before{
+      border:none;
+      border-radius: 1px;
+    }
+  }
+
+  .foot{
+    position: absolute;
+    right:3%;
+    height:0.32rem;
+    line-height:0.32rem;
+    font-size: 0.25rem;
+    letter-spacing: 1px;
+    margin-top:15px
+  }
+  .bottom-bar {
+    position: relative;
+    width: 100%;
+    padding-top: 56%;
+    //background-image: url(../../../../assets/shop/banner_two.png);
+    background-size: cover;
+    //background-position: bottom center;
+    & > div {
+      position: absolute;
+      top: 42.6%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      font-size: 0.26rem;
+      span {
+        color: #fff200;
+        padding: 0 4px;
+      }
+    }
+  }
+  .the-list {
+    .title {
+      height: 0.88rem;
+      line-height: 0.88rem;
+      font-size: 0.32rem;
+      padding: 0 10px;
+      border-top: solid 1px #f3f3f3;
+      background-color: #fff;
+      a {
+        display: block;
+        height: 100%;
+        color: #222;
+        span {
+          vertical-align: middle;
+        }
+        svg {
+          float: right;
+        }
+      }
+    }
+  }
+}
+.am-toast-text{
+  top:30% ;
+  left:2.65rem;
+}

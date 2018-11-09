@@ -1,0 +1,63 @@
+.page-tixian {
+  .tixian-info {
+    padding: 0 15px 15px 15px;
+    font-size: 0.32rem;
+    background-color: #fff;
+    span {
+      color: #40a9ff;
+    }
+  }
+  .info {
+    padding: 15px;
+    color: #aaa;
+    font-size: 0.31rem;
+    line-height: 0.6rem;
+    // letter-spacing: 1px;
+    text-align: justify;
+  }
+  .submit-box {
+    padding: 0.3rem 0 0.2rem;
+    .submit-btn {
+      display: block;
+      width: 5.2rem;
+      height: 0.88rem;
+      line-height: 0.88rem;
+      border-radius: 0.44rem;
+      color: #fff;
+      font-size: 0.32rem;
+      border: none;
+      letter-spacing: 1px;
+      margin: 0 auto;
+    }
+  }
+  .mt {
+    // margin-top: 0.2rem;
+  }
+  .am-list-body {
+    &:before {
+      display: none !important;
+    }
+    &::after {
+      display: none !important;
+    }
+  }
+  .my-list {
+    box-sizing: border-box;
+    padding: 0.2rem 15px 2px;
+    // min-height: 45px;
+    display: flex;
+    font-size: 0.36rem;
+    align-items: center;
+    color: #000;
+    background-color: #fff;
+    .l {
+    }
+    .r {
+      color: #338cf8;
+      text-align: right;
+      &.money {
+        font-size: 0.45rem;
+      }
+    }
+  }
+}

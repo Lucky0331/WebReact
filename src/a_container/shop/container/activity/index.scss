@@ -1,0 +1,50 @@
+.page-activiey {
+  height: 100vh;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  .activity-iframe {
+    position: relative;
+    display: block;
+    width: 100%;
+    flex: 1;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    & > iframe {
+      display: block;
+      border: none;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .others {
+    flex: none;
+    border-top: solid 1px #f2f2f2;
+    .title {
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+    .others-ul {
+      width: 100%;
+      min-height: 80px;
+      padding: 10px;
+      overflow-x: auto;
+      display: flex;
+      margin-bottom: 0;
+      & > li {
+        margin-right: 10px;
+        img {
+          height: 80px;
+          width: auto;
+        }
+      }
+      .zw-li {
+        width: 10px;
+        display: inline-block;
+      }
+    }
+  }
+}

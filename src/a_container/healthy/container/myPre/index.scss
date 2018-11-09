@@ -1,0 +1,98 @@
+.page-my-pre {
+  height: 100vh;
+  background-color: #f3f3f3;
+  .the-ul {
+    background-color: #f3f3f3 !important;
+  }
+  .one-box {
+    & + .one-box {
+      margin-top: 0.2rem;
+    }
+    .pre-box {
+      padding: 0.2rem;
+      background-color: #fff;
+      .l {
+        div {
+          font-size: 0.32rem;
+          & + div {
+            margin-top: 0.2rem;
+          }
+        }
+      }
+      .r {
+        .down {
+          color: #4788f4;
+          font-size: 0.32rem;
+        }
+        .look {
+          color: #fff;
+          background-color: #4285f4;
+          font-size: 0.28rem;
+          padding: 0.1rem 0.2rem;
+          border-radius: 0.6rem;
+        }
+      }
+    }
+
+    .card-box {
+      padding: 0.2rem;
+      border-top: solid 1px #f3f3f3;
+      background-color: #fff;
+      .l {
+        .title {
+          color: #222328;
+          font-size: 0.32rem;
+          letter-spacing: 1px;
+        }
+        .info {
+          margin-top: 0.2rem;
+          font-size: 0.32rem;
+          color: #89888e;
+          img {
+            width: 0.28rem;
+            margin-right: 0.2rem;
+          }
+          a {
+            color: #89888e;
+          }
+        }
+      }
+      .r {
+        .addr {
+          text-align: center;
+          color: #4788f5;
+          font-size: 0.28rem;
+          letter-spacing: 1px;
+          img {
+            height: 0.8rem;
+            margin-bottom: 0.1rem;
+          }
+        }
+      }
+    }
+    .controls {
+      padding: 0.2rem;
+      display: flex;
+      justify-content: flex-end;
+      border-top: solid 1px #f3f3f3;
+      background-color: #fff;
+      & > div {
+        padding: 0.1rem 0.2rem;
+        border: solid 1px #f3f3f3;
+        color: #222;
+        font-size: 0.32rem;
+        border-radius: 3px;
+        transition: all 200ms;
+        &:active {
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+  .nodata {
+    text-align: center;
+    color: #aaa;
+    padding: 0.2rem;
+    font-size: 0.28rem;
+  }
+}

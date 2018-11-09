@@ -1,0 +1,131 @@
+.live-main {
+  height: 100vh;
+  background-color: #fff;
+  .live-tab-box {
+    height: 100%;
+    .body-box {
+      width: 100%;
+      height: calc(100vh - 44px);
+      &.shot {
+        height: calc(100vh - 122px);
+      }
+      .live-box-ul {
+        box-sizing: border-box;
+        background-color: #fff;
+        padding: 8px;
+        .live-one-box {
+          display: flex;
+          overflow: hidden;
+          flex-direction: column;
+          border-radius: 6px;
+          color: #fff;
+          width: 100%;
+          height: 3rem;
+          background-size: cover;
+          background-position: center;
+          box-sizing: border-box;
+          padding: 0.15rem;
+          & + .live-one-box {
+            margin-top: 0.2rem;
+          }
+          .time {
+            flex: none;
+            text-align: right;
+            font-size: 0.2rem;
+          }
+          .zw {
+            flex: 1;
+          }
+          .title {
+            font-size: 0.32rem;
+            letter-spacing: 1px;
+            padding-left: 2px;
+          }
+          .info {
+            display: flex;
+            font-size: 12px;
+            & > div {
+              flex: none;
+              padding: 0.05rem 0.15rem;
+            }
+            .p {
+              background-color: rgba(0, 0, 0, 0.3);
+              border-top-right-radius: 3px;
+              border-bottom-right-radius: 3px;
+            }
+            .s {
+              display: flex;
+              align-items: center;
+              border-top-left-radius: 3px;
+              border-bottom-left-radius: 3px;
+            }
+            .before {
+              width: 6px;
+              height: 6px;
+              background-color: #fff;
+              border-radius: 6px;
+              margin-right: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .lv2box {
+    width: 100%;
+    height: 78px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    padding: 8px 0 0 0;
+    .swiper {
+      display: flex;
+      box-sizing: border-box;
+      padding: 0 8px;
+      & > li {
+        width: 25vw;
+        height: 70px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+        transition: all 0.2s;
+        &.check {
+          background-color: #f2f2f2;
+        }
+        &:active {
+          background-color: #f2f2f2;
+        }
+        .logo {
+          width: 38px;
+          height: 38px;
+          border-radius: 8px;
+        }
+        .name {
+          width: 100%;
+          text-align: center;
+          font-size: 13px;
+          margin-top: 2px;
+        }
+        .much {
+          width: 100%;
+          text-align: center;
+          font-size: 10px;
+          color: rgb(137, 136, 142);
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+  .backColor {
+    background-color: #fff !important;
+  }
+  .am-tabs-default-bar-tab {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

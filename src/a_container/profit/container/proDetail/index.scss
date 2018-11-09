@@ -1,0 +1,42 @@
+.profit-main {
+  .head-chose {
+    padding: 0 15px;
+    height: 44px;
+    line-height: 44px;
+    background-color: #fff;
+    font-size: 0.36rem;
+    .date-chose {
+      display: flex;
+      width: 50%;
+      color: #000;
+      align-items: center;
+      & > span {
+        display: inline-block;
+        width: 50%;
+        min-width: 1.8rem;
+        margin-right: 4px;
+      }
+      img {
+        transform: rotate(90deg);
+        height: 12px;
+        margin-left: 4px;
+      }
+    }
+  }
+  .list-box {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 44px);
+  }
+  .am-list-body {
+    border-top: none;
+    &::before {
+      background-color: transparent;
+      height: 0;
+    }
+    &::after {
+      background-color: transparent;
+      height: 0;
+    }
+  }
+}

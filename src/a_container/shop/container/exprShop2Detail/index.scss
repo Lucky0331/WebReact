@@ -1,0 +1,218 @@
+.page-expr-detail {
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  .box1 {
+    height: calc(100vh - 50px);
+    overflow: auto !important;
+    .my-carousel {
+      background-color: #f2f2f2;
+      img {
+        object-fit: cover;
+        height: calc(100vw * 0.43);
+      }
+    }
+    .pageImg{
+      height: calc(100vw * 0.43);
+      display: block;
+    }
+  }
+  .box2 {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    .box2-btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 16px;
+        width: auto;
+        margin-right: 5px;
+      }
+    }
+    .tj {
+      background-color: rgb(65, 132, 243);
+      color: #fff;
+      &:active {
+        background-color: #40a9ff;
+      }
+    }
+    .fn {
+      color: #fff;
+      background-color: rgb(65, 132, 243);
+    }
+    .a {
+      border-right: solid 1px #f2f2f2;
+      border-top: solid 1px #f2f2f2;
+      a {
+        color: rgba(0, 0, 0, 0.65);
+      }
+    }
+  }
+  .info-box {
+    box-sizing: border-box;
+    padding: 10px;
+    color: rgb(137, 136, 142);
+    background-color: #fff;
+    font-size: 13px;
+    text-align: justify;
+    & + .info-box {
+      margin-top: 10px;
+    }
+    &.no-padding {
+      padding: 10px 0;
+      .t {
+        padding: 0 10px;
+      }
+      .i {
+        padding: 0 10px;
+      }
+    }
+    .t {
+      font-size: 16px;
+      color: rgb(37, 41, 46);
+      margin-bottom: 5px;
+    }
+    .i {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 5px;
+    }
+    .pic {
+      display: flex;
+      width: 100vw;
+      overflow: auto;
+      box-sizing: border-box;
+      padding: 0 10px;
+      img {
+        transition: all 256ms;
+        &.show {
+          position: fixed;
+          max-width: 80vw;
+          max-height: 80vh;
+          top: 50%;
+          left: 50%;
+          width: auto;
+          height: auto;
+          transform: translate(-50%, -50%);
+          z-index: 99;
+        }
+        display: block;
+        flex: none;
+        margin: 0 3px;
+        height: 80px;
+        border-radius: 3px;
+        & + img {
+          margin-left: 5px;
+        }
+      }
+    }
+    .star-row {
+      display: flex;
+      align-items: center;
+      & > div {
+        display: flex;
+        align-items: center;
+        img {
+          width: 16px;
+          padding-right: 4px;
+        }
+        &.word {
+          margin-left: 10px;
+        }
+      }
+    }
+    .addr-info {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+      img {
+        height: 16px;
+        margin-right: 10px;
+      }
+    }
+    .about-row {
+      display: flex;
+      flex-wrap: wrap;
+      & > div {
+        flex: none;
+        display: flex;
+        width: 50%;
+        span {
+          font-size: 13px;
+          white-space: normal;
+          word-break: break-all;
+          word-wrap: break-word;
+        }
+        span:first-child {
+          flex: none;
+        }
+      }
+    }
+  }
+  .mark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: none;
+    transform: translate(-50%, -50%);
+    transition: all 200ms;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 0;
+    @keyframes shownow {
+      0% {
+        display: flex;
+        opacity: 0;
+      }
+      100% {
+        display: flex;
+        opacity: 1;
+      }
+    }
+    @keyframes shownow2 {
+      0% {
+        opacity: 0;
+        transform: scale(0, 0);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1, 1);
+      }
+    }
+    img {
+      flex: none;
+      max-width: 90%;
+      max-height: 90%;
+      width: auto;
+      height: auto;
+      transform: scale(0, 0);
+      opacity: 0;
+      box-shadow: 0 0 8px #666;
+      border-radius: 3px;
+      display: block;
+    }
+    &.show {
+      display: flex;
+      opacity: 1;
+      animation-name: shownow;
+      animation-duration: 200ms;
+      animation-fill-mode: forwards;
+      img {
+        animation-name: shownow2;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}

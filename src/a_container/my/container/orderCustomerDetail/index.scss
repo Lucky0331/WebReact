@@ -1,0 +1,104 @@
+.page-order-detail {
+  padding-bottom: 46px;
+  .card-box {
+    padding: 0.2rem;
+    background-color: #fff;
+    margin-bottom: 0.2rem;
+    & + .card-box {
+      margin-top: 0.2rem;
+    }
+    .info {
+      .pic {
+        width: 2.12rem;
+        height: 1.48rem;
+        background-color: #ccc;
+        margin-right: 0.2rem;
+        border-radius: 4px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .goods {
+        line-height: 0.37rem;
+        .t {
+          font-size: 0.32rem;
+          margin-bottom: 0.1rem;
+        }
+        .i {
+          font-size: 0.28rem;
+          color: #fc4800;
+          span {
+            font-size: 0.36rem;
+          }
+        }
+      }
+    }
+  }
+  .long.am-list-item .am-list-line .am-list-extra {
+    flex-basis: auto;
+  }
+  .order-info {
+    background-color: #fff;
+    font-size: 0.32rem;
+    color: #89888e;
+    padding: 0.2rem;
+    & > div {
+      line-height: 0.6rem;
+    }
+    .worker {
+      color: #222;
+      margin-bottom: 0.3rem;
+    }
+    .basic {
+      margin-bottom: 0.3rem;
+    }
+  }
+  .thefooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 47px;
+    width: 100%;
+    z-index: 10;
+    padding: 0 0.2rem;
+    background-color: #fff;
+    a {
+      display: inline-block;
+      width: 2rem;
+      height: 32px;
+      text-align: center;
+      line-height: 32px;
+      border-radius: 50px;
+      border: solid 1px #aaa;
+      margin-left: 0.2rem;
+      color: #aaa;
+      &:active {
+        background-color: #aaa;
+        color: #fff;
+      }
+      &.blue {
+        border: solid 1px #4285f4;
+        color: #4285f4;
+        &:active {
+          background-color: #4285f4;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .normal-item.am-list-item {
+    .am-list-thumb {
+      margin: 0 0 0 15px;
+    }
+    .am-list-brief {
+      font-size: 0.32rem;
+    }
+    img {
+      width: 12px;
+      height: auto;
+    }
+  }
+}

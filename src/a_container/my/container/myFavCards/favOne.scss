@@ -1,0 +1,280 @@
+.page-favone {
+  height: 100vh;
+  .tabs-div {
+    height: 100vh;
+    .the-ul {
+      padding: 0.2rem;
+      box-sizing: border-box;
+      & > div + div {
+        margin-top: 0.2rem;
+      }
+      .what-f {
+        font-size: 12px;
+        color: #ccc;
+        padding-bottom: 0.2rem;
+      }
+      .zw {
+        margin: 0 !important;
+        height: 50px;
+      }
+      .cardbox {
+        position: relative;
+        padding: 0.2rem;
+        box-sizing: border-box;
+        background-size: cover;
+        border-radius: 8px;
+        width: 7.1rem;
+        height: 3.2rem;
+        color: #fff;
+        background-position: top center;
+        background-image: url(../../../../assets/favcards/ka3@3x.png);
+        &.a {
+          background-image: url(../../../../assets/favcards/ka1@3x.png);
+        }
+        &.b {
+          background-image: url(../../../../assets/favcards/ka2@3x.png);
+        }
+        &.abnormal1 {
+          background-image: url(../../../../assets/favcards/ka1_no@3x.png) !important;
+          .i {
+            color: #fff !important;
+          }
+        }
+        &.abnormal2 {
+          background-image: url(../../../../assets/favcards/ka2_no@3x.png) !important;
+          .i {
+            color: #fff !important;
+          }
+        }
+        &.abnormal3 {
+          background-image: url(../../../../assets/favcards/ka3_no@3x.png) !important;
+          .i {
+            color: #fff !important;
+          }
+        }
+        .row1 {
+          height: 0.5rem;
+          .t {
+            font-size: 0.36rem;
+          }
+          .i {
+            font-size: 0.26rem;
+            color: #9394a4;
+          }
+          .right-info {
+            font-size: 0.36rem;
+          }
+          .tip {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1.6rem;
+            height: auto;
+          }
+          .flex-none {
+            img {
+              width: 0.14rem;
+            }
+          }
+        }
+        .row-center {
+          font-size: 12px;
+          color: #fff;
+          text-align: center;
+          flex: auto;
+          width: 100%;
+          padding-top: 0.1rem;
+        }
+        .row2 {
+          .t {
+            font-size: 0.32rem;
+            span {
+              margin-left: 0.45rem;
+            }
+          }
+          .money {
+            font-size: 0.32rem;
+            margin-bottom: 0.1rem;
+          }
+        }
+        .i {
+          font-size: 0.28rem;
+          color: #f2f2f2;
+          margin-top: 0.1rem;
+        }
+        .share-btn {
+          position: relative;
+          background-color: #fff;
+          color: #222;
+          text-align: center;
+          font-size: 0.26rem;
+          padding: 0.02rem 0.22rem;
+          border-radius: 0.4rem;
+          &.check {
+            color: #40a9ff;
+          }
+          img {
+            width: 0.3rem;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .tabs-bars-div {
+    text-align: center;
+    & > div + div {
+      padding-top: 8px;
+    }
+  }
+  .am-tabs-default-bar-tab {
+    height: 56px;
+  }
+  .share-modal {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    &.hide {
+      display: none;
+    }
+    .share {
+      position: absolute;
+      top: 0.15rem;
+      right: 0.15rem;
+      width: 1rem;
+      height: auto;
+    }
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #fff;
+      font-size: 0.32rem;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .nodata {
+    text-align: center;
+    font-size: 0.34rem;
+    line-height: 0.6rem;
+    padding: 0.2rem;
+    color: #888;
+    a {
+      color: #4285f4;
+    }
+  }
+  .footer {
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: solid 1px #f2f2f2;
+    z-index: 8;
+    & > div {
+      flex: 1;
+      background-color: #fff;
+      text-align: center;
+      transition: all 200ms;
+      color: #222;
+      & + div {
+        border-left: solid 1px #f2f2f2;
+      }
+    }
+  }
+  .modal1 {
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0 0 0;
+    box-shadow: 0 -5px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    bottom: -100%;
+    opacity: 0;
+    transition: all 200ms;
+    &.show {
+      opacity: 1;
+      bottom: 0;
+    }
+    .title {
+      text-align: center;
+      color: #000;
+      font-size: 15px;
+      span {
+        color: #40a9ff;
+      }
+    }
+    .form-box {
+      box-sizing: border-box;
+      padding: 10px 50px;
+      .label-span {
+        padding: 0 10px;
+      }
+      .err {
+        font-size: 12px;
+        color: #cc3333;
+        margin: 5px 0;
+        text-align: center;
+      }
+      .fuckUpBox {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        margin-top: 5px;
+        .btn {
+          height: 30px;
+          width: 30px;
+          line-height: 30px;
+          text-align: center;
+          font-size: 18px;
+          flex: none;
+          border: solid 1px #f0f0f0;
+        }
+        .input {
+          margin: 0 5px;
+          flex: 1;
+          height: 30px;
+          text-align: center;
+          box-sizing: border-box;
+          border: solid 1px #f0f0f0;
+        }
+      }
+    }
+    .modal-footer {
+      height: 50px;
+      line-height: 50px;
+      box-sizing: border-box;
+      display: flex;
+      width: 100%;
+      background-color: #fff;
+      border-top: solid 1px #f2f2f2;
+      z-index: 8;
+      & > div {
+        flex: 1;
+        background-color: #fff;
+        text-align: center;
+        transition: all 200ms;
+        color: #222;
+        & + div {
+          border-left: solid 1px #f2f2f2;
+        }
+        &.check {
+          background-color: rgb(65, 132, 243);
+          color: #fff;
+        }
+      }
+    }
+  }
+}

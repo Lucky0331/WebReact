@@ -1,0 +1,135 @@
+.page-amb {
+  background-size: 100% auto;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  min-height: 100vh;
+  .login-box {
+    padding-top: 1.02rem;
+    .logo {
+      width: 1.28rem;
+      height: 1.28rem;
+      display: block;
+      margin: 0 auto 0.3rem auto;
+      border-radius: 0.1rem;
+      background-color: #f2f2f2;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .logo-info {
+      margin: 0.3rem 0.2rem 0 0.2rem;
+      font-size: 0.31rem;
+      text-align: center;
+      color: #25292e;
+      line-height: 0.4rem;
+    }
+    .this-list {
+      margin-top: 0.6rem;
+      .am-list-body {
+        border-top: none;
+        &:before {
+          background-color: transparent;
+        }
+        .am-list-item {
+          .am-input-label.am-input-label-5 {
+            width: 50px;
+            font-size: 15px;
+          }
+          .am-input-control input {
+            font-size: 15px;
+          }
+          .am-list-extra {
+            flex-basis: auto;
+          }
+        }
+      }
+    }
+    .input-box {
+      width: 100%;
+      margin: 1rem auto 0 auto;
+      padding: 0 0.3rem;
+      box-sizing: border-box;
+      .btn {
+        display: inline !important;
+        padding: 0 0.2rem;
+        font-size: 0.32rem;
+        color: #0d62f0;
+        margin: 0 auto;
+        border: none;
+        letter-spacing: 1px;
+        &:active {
+          color: #4285f4;
+        }
+      }
+    }
+    .input-box2 {
+      width: 6.6rem;
+      height: 0.88rem;
+      line-height: 0.88rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      .btn {
+        color: #222328;
+      }
+    }
+    .line {
+      width: 1px;
+      height: 70%;
+      background-color: #474b54;
+      margin: 0 0.2rem;
+      align-self: center;
+      flex: none;
+    }
+    .line2 {
+      width: 1px;
+      height: 80%;
+      background-color: transparent;
+      margin-left: 0.2rem;
+      align-self: center;
+      flex: none;
+    }
+  }
+  .this-btn {
+    display: block;
+    width: 5.2rem;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    border-radius: 0.44rem;
+    background-image: -webkit-linear-gradient(left, #82c2ff, #307af4);
+    color: #fff;
+    font-size: 0.32rem;
+    margin: 1rem auto 0 auto;
+    border: none;
+    letter-spacing: 1px;
+  }
+  .other-login {
+    text-align: center;
+    justify-content: flex-end;
+    .box {
+      padding: 0.2rem 0 0.6rem 0;
+    }
+    .title {
+      font-size: 0.28rem;
+      color: #89888e;
+      margin-bottom: 0.3rem;
+    }
+    .ul {
+      li {
+        img {
+          width: 0.98rem;
+          height: auto;
+          margin-bottom: 0.2rem;
+        }
+        .t {
+          font-size: 0.32rem;
+        }
+      }
+    }
+  }
+}

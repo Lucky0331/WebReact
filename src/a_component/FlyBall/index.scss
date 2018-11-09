@@ -1,0 +1,14 @@
+.fly-ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #ff0000;
+  border-radius: 20px;
+  z-index: 9999;
+  transform: scale(0, 0);
+}
+.flyball-svg {
+  display: none;
+}

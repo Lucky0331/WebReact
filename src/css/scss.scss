@@ -1,0 +1,135 @@
+$fontSize: 0.32rem;
+
+.page-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  min-height: calc(100vh - 0.98rem);
+  background-color: #f3f3f3;
+}
+
+.page-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.page-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-auto {
+  flex: auto;
+}
+.flex-none {
+  flex: none;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-jc-center {
+  justify-content: center;
+}
+
+.flex-jc-end {
+  justify-content: flex-end;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-ai-center {
+  align-items: center;
+}
+.flex-ai-end {
+  align-items: flex-end;
+}
+
+/* 自定义的antd-mobile modal footer */
+.all_modal {
+  width: 80% !important;
+  max-width: 520px;
+  .am-modal-body {
+    padding: 0 !important;
+  }
+  .modal-footer {
+    border-top: solid 1px #f3f3f3;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    display: flex;
+    & > div {
+      flex: auto;
+      text-align: center;
+      color: #4285f4;
+    }
+  }
+}
+/* 全局暂无数据样式 */
+.data-nothing {
+  padding: 0.2rem;
+  font-size: 0.26rem;
+  color: #aaa;
+  text-align: center;
+  border: none !important;
+  background-color: transparent !important;
+  img {
+    width: 3rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
+/* 全局底部站位 */
+.footer-zw {
+  height: 47px;
+  width: 100%;
+}
+.touch-none {
+  touch-action: none;
+}
+
+/* 轮播图的点的颜色 */
+.am-carousel-wrap {
+  .am-carousel-wrap-dot {
+    span {
+      color: #888 !important;
+      background-color: #888 !important;
+    }
+  }
+  .am-carousel-wrap-dot-active {
+    span {
+      color: #fff !important;
+      background-color: #fff !important;
+    }
+  }
+}
+
+/* 所有蓝色按钮的字都为白色，防止按下不弹起 */
+.am-button-primary {
+  span {
+    color: #fff !important;
+  }
+}
+
+.special-item {
+  .am-list-line {
+    .am-list-content {
+      flex: none !important;
+    }
+    .am-list-extra {
+      flex: auto !important;
+    }
+  }
+}
+
+.am-toast > span {
+  max-width: 80% !important;
+}
+
+.cache-hide {
+  width: 100vh;
+  height: 100vh;
+  visibility: hidden;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

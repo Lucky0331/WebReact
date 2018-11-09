@@ -1,0 +1,22 @@
+.down-line {
+  .list {
+    box-sizing: border-box;
+    padding: 10px;
+    & > li {
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      .l {
+        & > div {
+          font-size: 14px;
+          padding: 2px 2px 2px 0;
+        }
+      }
+      .r {
+        width: 20%;
+        border-left: solid 1px #e0e0e0;
+      }
+    }
+  }
+}

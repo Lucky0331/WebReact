@@ -1,0 +1,28 @@
+.page-buy-success {
+  .card-box {
+    padding: 0.3rem;
+    background-color: #fff;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    img {
+      height: 0.68rem;
+    }
+    .info {
+      color: #222328;
+      font-size: 0.32rem;
+      font-weight: bold;
+      margin-top: 0.3rem;
+    }
+  }
+  .long.am-list-item .am-list-line .am-list-extra {
+    flex-basis: auto;
+  }
+  .order-info {
+    font-size: 0.32rem;
+    color: #89888e;
+    padding: 0.2rem;
+    & > div {
+      line-height: 0.6rem;
+    }
+  }
+}

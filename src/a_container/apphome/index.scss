@@ -1,0 +1,100 @@
+.apphome-page {
+  .my-carousel {
+    img {
+      object-fit: cover;
+      height: 200px;
+    }
+  }
+  .the-list {
+    .title {
+      height: 0.88rem;
+      line-height: 0.88rem;
+      font-size: 0.32rem;
+      padding: 0 10px;
+      border-top: solid 1px #f3f3f3;
+      background-color: #fff;
+      a {
+        display: block;
+        height: 100%;
+        color: #222;
+        span {
+          vertical-align: middle;
+        }
+        svg {
+          float: right;
+        }
+      }
+    }
+    .list {
+      border-top: solid 1px #f3f3f3;
+      border-bottom: solid 1px #f3f3f3;
+      & > li {
+        background-color: #fff;
+        & > a {
+          color: #222;
+          display: flex;
+          height: 1.48rem;
+          max-height: 225px;
+          padding: 10px;
+          box-sizing: initial;
+          .pic {
+            width: 2.12rem;
+            height: 100%;
+            max-width: 200px;
+            background-color: #f2f2f2;
+            border-radius: 4px;
+            img {
+              width: 100%;
+              height: 100%;
+              display: block;
+              object-fit: cover;
+              border-radius: 4px;
+              box-sizing: initial !important;
+            }
+            .default {
+              height: 40px;
+              width: 40px;
+              object-fit: fill;
+              opacity: 0.3;
+            }
+          }
+          .detail {
+            margin-left: 10px;
+            overflow: hidden;
+            .t {
+              font-size: 0.32rem;
+            }
+            .i {
+              font-size: 0.28rem;
+              color: #888;
+              .all_nowarp2 {
+                line-height: 0.31rem;
+              }
+            }
+            .k {
+              span {
+                font-size: 0.22rem;
+                color: #fc4800;
+                vertical-align: middle;
+                i {
+                  font-style: normal;
+                  font-size: 0.36rem;
+                }
+              }
+              .btn {
+                padding: 0 10px;
+                font-size: 0.32rem;
+                box-sizing: initial;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .no-padding-left {
+    .am-list-item .am-list-line-multiple {
+      padding-left: 0 !important;
+    }
+  }
+}

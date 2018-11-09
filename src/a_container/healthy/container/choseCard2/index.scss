@@ -1,0 +1,79 @@
+.page-chose-card {
+  height: 100vh;
+  background-color: #fff;
+  .luo-box {
+    height: calc(100% - 47px);
+  }
+  .the-ul {
+    padding: 0.2rem;
+    box-sizing: border-box;
+    & > li + li {
+      margin-top: 0.2rem;
+    }
+    .nodata {
+      text-align: center;
+      font-size: 0.34rem;
+      line-height: 0.6rem;
+      padding: 0.2rem;
+      color: #888;
+      a {
+        color: #4285f4;
+      }
+    }
+    .cardbox {
+      padding: 0.2rem;
+      box-sizing: border-box;
+      background-image: url(../../../../assets/pingguka@3x.png);
+      background-size: 100% 100%;
+      border-radius: 8px;
+      width: 7.1rem;
+      height: 3.2rem;
+      color: #fff;
+      &.abnormal {
+        background-image: url(../../../../assets/share/pingguka_one@3x.png);
+        .i {
+          color: #fff !important;
+        }
+      }
+      .row1 {
+        .t {
+          font-size: 0.36rem;
+        }
+        .i {
+          font-size: 0.26rem;
+          color: #9394a4;
+          margin-top: 0.1rem;
+        }
+        .tip {
+          width: 1.2rem;
+        }
+      }
+      .row2 {
+        .t {
+          font-size: 0.32rem;
+        }
+        .money {
+          font-size: 0.32rem;
+          margin-bottom: 0.1rem;
+        }
+      }
+      .i {
+        font-size: 0.28rem;
+        color: #f2f2f2;
+        margin-top: 0.1rem;
+      }
+      .share-btn {
+        position: relative;
+        font-size: 0.28rem;
+        text-align: right;
+        &.check {
+          color: #40a9ff;
+        }
+        img {
+          width: 0.3rem;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}

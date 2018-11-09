@@ -1,0 +1,57 @@
+.window-flod {
+  position: fixed;
+  bottom: 150px;
+  right: 10px;
+  border-radius: 4px;
+  width: 40px;
+  z-index: 9000;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0, 0);
+  transition: all 250ms;
+  &.inside {
+    right: -25px;
+  }
+  &.show {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  .line {
+    width: 70%;
+    height: 1px;
+    background-color: rgb(118, 118, 118);
+    margin: 0 auto;
+  }
+  .btn {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    .shopping-num {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      font-size: 12px;
+      padding: 0 1px;
+      color: #fff;
+      background-color: #ff5b05;
+      min-width: 20px;
+      text-align: center;
+      border-radius: 20px;
+      transform: scale(0, 0);
+      opacity: 0;
+      transition: all 200ms;
+      &.show {
+        opacity: 1;
+        transform: scale(1, 1);
+      }
+    }
+    img {
+      display: block;
+      width: auto;
+      margin: 0 auto;
+      height: 21px;
+    }
+  }
+}

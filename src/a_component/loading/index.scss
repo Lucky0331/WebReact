@@ -1,0 +1,16 @@
+.loading {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  left: 50%;
+  color: #aaa;
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 14px;
+  img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 150px;
+    height: auto;
+  }
+}

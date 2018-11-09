@@ -1,0 +1,130 @@
+.shop-type-main {
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  opacity: 0;
+  transition: opacity 200ms;
+  &.show {
+    opacity: 1;
+  }
+  .my-carousel {
+    background-color: #f2f2f2;
+    img {
+      object-fit: cover;
+      height: calc(100vw * 0.43);
+    }
+  }
+  .title-pic {
+    position: relative;
+    background-color: #fff;
+    padding-bottom: 28px;
+    & > img {
+      width: 100%;
+      height: auto;
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+    }
+    .search {
+      &.am-search {
+        position: absolute;
+        width: 80%;
+        bottom: 4px;
+        left: 10%;
+        background-color: transparent;
+        .am-search-synthetic-ph {
+          height: 35px;
+          line-height: 35px;
+        }
+        .am-search-clear {
+          top: 50%;
+          transform: translateY(-50%);
+          right: 5px;
+        }
+        .am-search-input {
+          box-shadow: 0 0 8px #ccc;
+          height: 35px;
+          border-radius: 35px;
+          input {
+            height: 35px;
+          }
+        }
+      }
+    }
+  }
+  .tab-box {
+    display: flex;
+    box-sizing: border-box;
+    & > div {
+      width: 50%;
+      flex: none;
+      box-sizing: border-box;
+      &:first-child {
+        padding: 10px 5px 10px 10px;
+      }
+      &:nth-child(2) {
+        padding: 10px 10px 10px 5px;
+      }
+      .a-product {
+        border: solid 1px #eeeeee;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 4px;
+        background-color: #ffffff;
+        & + div {
+          margin-top: 10px;
+        }
+        & > img {
+          width: 100%;
+          height: auto;
+          min-height: 100px;
+        }
+        .p-t {
+          font-size: 15px;
+          box-sizing: border-box;
+          padding: 5px;
+          height: 46px;
+          line-height: 23px;
+        }
+        .p-m {
+          font-size: 16px;
+          color: #f92a19;
+          box-sizing: border-box;
+          padding: 5px;
+        }
+        .p-i {
+          color: #89888e;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          box-sizing: border-box;
+          padding: 5px;
+          img {
+            height: 20px;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  .type-bar {
+    width: 100vw;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    background-color: #fff;
+
+    & > div {
+      flex: none;
+      width: 20%;
+      text-align: center;
+      font-size: 14px;
+      img {
+        width: 90%;
+        max-width: 60px;
+        margin: 0 auto 5px auto;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}

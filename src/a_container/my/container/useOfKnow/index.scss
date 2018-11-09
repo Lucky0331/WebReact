@@ -1,0 +1,25 @@
+.page-use-of-know {
+  min-height: 100vh;
+  background-color: #fff;
+  padding-top: 0.4rem;
+  .title {
+    span {
+      display: inline-block;
+      padding: 0.15rem 0.3rem;
+      background-color: #4285f4;
+      font-size: 0.3rem;
+      color: #fff;
+      border-bottom-right-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+  }
+  .info {
+    padding: 0.2rem;
+    .blue {
+      color: #4285f4;
+    }
+    span {
+      color: #aaa;
+    }
+  }
+}

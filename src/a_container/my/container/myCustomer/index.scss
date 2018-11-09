@@ -1,0 +1,86 @@
+.page-customer {
+  height: 100vh;
+  .tabs-div {
+    height: 100%;
+    .f-info {
+      box-sizing: border-box;
+      margin: 0.3rem;
+      background-color: #eaeaea;
+      border-radius: 0.1rem;
+      padding: 0.3rem;
+      display: flex;
+      align-items: center;
+      .icon1 {
+        width: 0.7rem;
+        height: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: none;
+        img {
+          width: 0.4rem;
+          height: auto;
+        }
+      }
+      .info {
+        margin-left: 0.3rem;
+        color: #999ca0;
+        font-size: 0.24rem;
+      }
+    }
+  }
+  .tabs-bars-div {
+    text-align: center;
+    & > div + div {
+      padding-top: 8px;
+    }
+  }
+  .footer-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #999c9f;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+    img {
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      transform: translateY(-50%);
+      height: 14px;
+    }
+    &:active {
+      background-color: #b7bfc1;
+    }
+  }
+  .footer-zw {
+    height: 45px;
+    width: 100%;
+  }
+  .am-tabs-default-bar-tab {
+    height: 56px;
+  }
+
+  .nothing {
+    padding: 0.2rem;
+    text-align: center;
+    color: #aaa;
+    font-size: 0.28rem;
+    background-color: transparent !important;
+  }
+}
+.que-modal-info {
+  width: 100%;
+  padding: 0.2rem;
+  font-size: 0.36rem;
+  color: #333;
+  img {
+    height: 0.65rem;
+    width: auto;
+    margin-right: 0.2rem;
+  }
+}

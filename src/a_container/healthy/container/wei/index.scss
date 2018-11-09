@@ -1,0 +1,62 @@
+.pinggu-page {
+  padding-bottom: 20px;
+  .body1 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    background-image: url(./assets/back@3x.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 7.7rem;
+    padding-bottom: 0.2rem;
+    .code {
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      width: 40%;
+    }
+  }
+  .share-btn {
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    background-color: #1355a7;
+    margin: 0.4rem auto 0.2rem auto;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    &:active {
+      background-color: #40a9ff;
+    }
+  }
+  .share-modal {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    &.hide {
+      display: none;
+    }
+    .share {
+      position: absolute;
+      top: 0.15rem;
+      right: 0.15rem;
+      width: 1rem;
+      height: auto;
+    }
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #fff;
+      font-size: 0.32rem;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.page-per-info {
+  .bar-list {
+    padding: 0 0 0.28rem 0;
+    .item {
+      padding: 0.3rem 0;
+      align-items: center;
+      background-color: #fff;
+      position: relative;
+      .icon {
+        padding: 0 0.3rem;
+        img {
+          width: auto;
+          height: 0.38rem;
+        }
+      }
+      .title {
+        flex: auto;
+        font-size: 0.36rem;
+        letter-spacing: 1px;
+        padding-left: 0.28rem;
+        color: #222 !important;
+      }
+      .info {
+        flex: auto;
+        font-size: 0.32rem;
+        color: #89888e;
+        text-align: right;
+      }
+      .arrow {
+        padding: 0 0.28rem;
+        img {
+          width: 0.14rem;
+          height: auto;
+        }
+      }
+      .photo {
+        padding: 0 0.28rem;
+        img {
+          height: 0.65rem;
+          width: 0.65rem;
+          object-fit: cover;
+          border-radius: 0.1rem;
+        }
+      }
+      .line {
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        width: 94%;
+        left: 3%;
+        background-color: #f3f3f3;
+      }
+      &.mt {
+        margin-top: 0.28rem;
+      }
+    }
+  }
+}

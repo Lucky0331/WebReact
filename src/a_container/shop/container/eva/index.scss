@@ -1,0 +1,122 @@
+.eva-page {
+  .title {
+    padding: 15px 0;
+    display: flex;
+    font-size: 16px;
+    align-items: baseline;
+    justify-content: center;
+    background-color: #fff;
+    img {
+      width: 25px;
+      height: auto;
+      margin-right: 4px;
+      align-self: center;
+    }
+    .num {
+      font-size: 24px;
+      margin-right: 4px;
+    }
+  }
+  .chose {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    background-color: #fff;
+    & > div {
+      padding: 2px 6px;
+      font-size: 12px;
+      background-color: #fff2f4;
+      border-radius: 20px;
+      &.check {
+        background-color: #f92a19;
+        color: #fff;
+      }
+    }
+    & > div:first-child {
+      margin-right: 10px;
+    }
+  }
+  .body-box {
+    margin-top: 10px;
+    width: 100%;
+    height: calc(100vh - 113px);
+    overflow: hidden;
+    position: relative;
+    .scroller {
+      width: 200%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      & > ul {
+        flex-basis: 50%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transition: margin-left 300ms;
+        &.check {
+          margin-left: -50%;
+        }
+        & > li {
+          box-sizing: border-box;
+          padding: 10px;
+          background-color: #fff;
+          .info-box {
+            display: flex;
+            .pic {
+              width: 40px;
+              height: 40px;
+              border-radius: 40px;
+              object-fit: cover;
+              flex: none;
+              margin-right: 10px;
+            }
+            .info {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              .name {
+                flex: none;
+                font-size: 14px;
+              }
+              .stars {
+                flex: none;
+                display: flex;
+                align-items: center;
+                img {
+                  width: 14px;
+                  height: auto;
+                  margin-right: 4px;
+                }
+              }
+            }
+          }
+          .eva {
+            margin-top: 10px;
+          }
+          .pics-box {
+            margin-top: 10px;
+            display: flex;
+            overflow: auto;
+            img {
+              flex: none;
+              height: 2.5rem;
+              width: auto;
+              border-radius: 3px;
+              & + img {
+                margin-left: 10px;
+              }
+            }
+          }
+          .date {
+            color: #ccc;
+            font-size: 14px;
+            margin-top: 10px;
+          }
+          & + li {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

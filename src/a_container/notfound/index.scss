@@ -1,0 +1,18 @@
+.page-notfound {
+  height: calc(100vh - 62px);
+  .box {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #aaa;
+    img {
+      width: 3rem;
+    }
+    div {
+      margin-top: 0.2rem;
+    }
+  }
+}

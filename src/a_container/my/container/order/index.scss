@@ -1,0 +1,210 @@
+.page-order {
+  height: 100vh;
+  .tabs-div {
+    height: calc(100vh - 44px);
+    .luo-title {
+      height: 47px;
+      width: 100%;
+      font-size: 14px;
+      display: flex;
+      padding: 0 10px;
+      box-sizing: border-box;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: solid 10px #f5f5f5;
+      background-color: #fff;
+      .chose-btn:active {
+        background-color: #ccc;
+      }
+      img {
+        height: 14px;
+        margin-right: 5px;
+      }
+      div {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .luo-box {
+      height: calc(100% - 47px);
+    }
+    .card-box {
+      padding: 0.2rem;
+      background-color: #fff;
+      & + .card-box {
+        margin-top: 0.2rem;
+      }
+      .title {
+        height: 0.8rem;
+        line-height: 0.8rem;
+        font-size: 0.32rem;
+        color: #222328;
+        .type {
+          color: #4285f4;
+        }
+      }
+      .info {
+        padding: 0.2rem 0;
+        border-top: solid 1px #f3f3f3;
+        border-bottom: solid 1px #f3f3f3;
+        .pic {
+          width: 2.12rem;
+          height: 1.48rem;
+          background-color: #ccc;
+          margin-right: 0.2rem;
+          border-radius: 4px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .goods {
+          line-height: 0.37rem;
+          .t {
+            font-size: 0.32rem;
+            margin-bottom: 0.1rem;
+          }
+          .i {
+            font-size: 0.28rem;
+            color: #89888e;
+          }
+        }
+      }
+      .controls {
+        position: relative;
+        margin-top: 0.2rem;
+        a {
+          padding: 0.16rem 0;
+          width: 2rem;
+          text-align: center;
+          font-size: 0.28rem;
+          border: solid 1px #aaa;
+          border-radius: 0.6rem;
+          margin-left: 0.2rem;
+          color: #aaa;
+          &:active {
+            background-color: #aaa;
+            color: #fff;
+          }
+          &.blue {
+            border: solid 1px #4285f4;
+            color: #4285f4;
+            &:active {
+              background-color: #4285f4;
+              color: #fff;
+            }
+          }
+          &.blue-btn {
+            border: none;
+            color: #fff;
+            background-color: #4285f4;
+            &:active {
+              background-color: #0e80d2;
+            }
+          }
+          &:active {
+            border: solid 1px #4285f4;
+            color: #4285f4;
+          }
+        }
+      }
+    }
+  }
+  .chose-modal-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    z-index: 99;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: all 250ms;
+    overflow: hidden;
+    &.show {
+      opacity: 1;
+      z-index: 9;
+      visibility: visible;
+      pointer-events: auto;
+      .chose-modal {
+        transform: translateX(0);
+      }
+    }
+    .chose-modal {
+      position: absolute;
+      width: 80%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      transition: all 250ms;
+      transform: translateX(80%);
+      background-color: #fff;
+      box-shadow: -3px 0 8px #888;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      .title {
+        border-bottom: solid 1px #ccc;
+        flex: none;
+        padding: 10px;
+      }
+      .form {
+        padding: 10px;
+        flex: auto;
+        li {
+          &+li{
+            margin-top: 25px;
+          }
+          & > div:first-child {
+            font-size: 14px;
+            color: #2f2f2f;
+          }
+          & > div:last-child {
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 0 10px;
+            margin-top: 10px;
+            input {
+              width: 100%;
+              border: 1px solid #dbdbdb;
+              border-radius: 2px;
+              flex: auto;
+              height: 36px;
+              color: #4a4a4a;
+              padding-left: 5px;
+              box-sizing: border-box;
+            }
+          }
+        }
+      }
+      .form-foot {
+        height: 50px;
+        border-top: solid 1px #f7f7f7;
+        display: flex;
+        & > div {
+          text-align: center;
+          line-height: 50px;
+        }
+        & > div:first-child {
+          flex: 1;
+          &:active {
+            background-color: #ccc;
+          }
+        }
+        & > div:last-child {
+          flex: 1;
+          background: #4285f4;
+          color: #fff;
+          &:active {
+            background-color: #0e80d2;
+          }
+        }
+      }
+    }
+  }
+}

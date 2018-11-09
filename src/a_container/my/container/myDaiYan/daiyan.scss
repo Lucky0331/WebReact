@@ -1,0 +1,39 @@
+.page-daiyan {
+  padding-bottom: 0.2rem;
+  .abox {
+    .title {
+      font-size: 0.32rem;
+      padding: 0.2rem;
+    }
+    .the-ul {
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+      & > li {
+        display: flex;
+        align-items: center;
+        padding: 0.4rem 0.2rem;
+        border-radius: 8px;
+        box-shadow: 0 0 8px #e0e0e0;
+        background-color: #fff;
+        & + li {
+          margin-top: 0.2rem;
+        }
+        .pic {
+          width: 1rem;
+          height: 1rem;
+          border-radius: 3px;
+          flex: none;
+          margin-right: 0.2rem;
+        }
+        .info {
+          flex: auto;
+          font-size: 0.34rem;
+        }
+        .r {
+          height: 12px;
+          width: auto;
+        }
+      }
+    }
+  }
+}

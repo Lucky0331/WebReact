@@ -1,0 +1,194 @@
+.shopping-car {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  .page-title {
+    height: 45px;
+    display: flex;
+    flex: none;
+    box-sizing: border-box;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    .r {
+      height: 100%;
+      line-height: 45px;
+      .ok {
+        color: #e64542;
+      }
+    }
+  }
+  .bodys {
+    flex: auto;
+    overflow: auto;
+    margin-top: 10px;
+    .downs-t {
+      height: 40px;
+      display: flex;
+      background-color: #fff;
+      box-sizing: border-box;
+      padding: 0 10px;
+      align-items: center;
+      margin-top: 10px;
+      justify-content: space-between;
+      .t {
+        color: #888;
+      }
+    }
+  }
+  .type-box {
+    & + .type-box {
+      margin-top: 10px;
+    }
+    .title {
+      height: 40px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      background-color: #fff;
+      border-bottom: solid 1px #f2f2f2;
+      & > label {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        .icon {
+          height: 18px;
+          width: auto;
+          margin-left: 10px;
+        }
+        .word {
+          margin-left: 10px;
+        }
+      }
+    }
+    .title-down {
+      height: 40px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      background-color: #fff;
+      border-bottom: solid 1px #f2f2f2;
+      display: flex;
+      align-items: center;
+      .icon {
+        height: 18px;
+        width: auto;
+      }
+      .word {
+        margin-left: 10px;
+      }
+    }
+    .list {
+      & > div + div {
+        border-top: solid 1px #f2f2f2;
+      }
+      .one {
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #fff;
+        .am-checkbox-wrapper {
+          flex: none;
+          display: flex;
+          align-items: center;
+          padding-right: 10px;
+        }
+        .downed {
+          align-self: center;
+          font-size: 12px;
+          background-color: #ccc;
+          color: #fff;
+          padding: 2px;
+          margin-right: 10px;
+          border-radius: 20px;
+        }
+        .pic {
+          width: 100px;
+          display: flex;
+          flex: none;
+          align-items: center;
+          justify-content: center;
+          img {
+            max-width: 100px;
+            max-height: 150px;
+          }
+        }
+        .infos {
+          flex: 1;
+          margin-left: 10px;
+          display: flex;
+          flex-direction: column;
+          .t {
+            flex: none;
+            font-size: 14px;
+          }
+          .i {
+            flex: 1;
+            font-size: 12px;
+            color: #888;
+          }
+          .num {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: none;
+            .money {
+              font-size: 12px;
+              color: rgb(137, 136, 142);
+            }
+            .stepper-luo {
+              transform: scale(0.8, 0.8);
+              transform-origin: 100% 50%;
+            }
+          }
+          .foot-info {
+            font-size: 12px;
+            color: rgb(249, 42, 25);
+            flex: none;
+          }
+        }
+      }
+      .am-swipe-btn-text {
+        background-color: #f00;
+        border-radius: 40px;
+      }
+    }
+  }
+  .footer-control {
+    height: 50px;
+    flex: none;
+    display: flex;
+    line-height: 50px;
+    background-color: #fff;
+    & > label {
+      padding: 0 10px;
+    }
+    .all {
+      padding: 0 10px;
+      span {
+        color: rgb(65, 132, 243);
+      }
+    }
+    .all2 {
+      padding: 0 20px;
+      color: #fff;
+      background-color: rgb(65, 132, 243);
+    }
+    .delete {
+      background-color: #e64340;
+      color: #fff;
+      padding: 0 20px;
+      height: 30px;
+      line-height: 30px;
+      margin-top: 10px;
+      margin-right: 10px;
+      border-radius: 6px;
+      transition: 200ms;
+      &:active {
+        background-color: #f26c6c;
+      }
+    }
+  }
+}

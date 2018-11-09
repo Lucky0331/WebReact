@@ -1,0 +1,45 @@
+.page-details {
+  .info-box {
+    padding: 0.2rem;
+    background-color: #fff;
+    & > div {
+      padding: 0.1rem 0;
+      & > div {
+        &:first-child {
+          color: #aaa;
+        }
+        &:last-child {
+          color: #25292e;
+        }
+      }
+    }
+  }
+  .who {
+    color: #f00;
+    .am-list-thumb img {
+      width: 0.82rem;
+      height: 0.82rem;
+      border-radius: 0.1rem;
+      object-fit: cover;
+    }
+  }
+  .mt {
+    margin-top: 0.2rem;
+  }
+  .am-list-body {
+    &::before {
+      display: none !important;
+    }
+    &::after {
+      display: none !important;
+    }
+    .am-list-line {
+      &::before {
+        display: none !important;
+      }
+      &::after {
+        display: none !important;
+      }
+    }
+  }
+}

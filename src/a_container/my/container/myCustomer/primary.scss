@@ -1,0 +1,38 @@
+.page-primary {
+  min-height: 100vh;
+  .footer-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #999c9f;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+    img {
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      transform: translateY(-50%);
+      height: 14px;
+    }
+    &:active {
+      background-color: #b7bfc1;
+    }
+  }
+  .data-title {
+    padding: 0.28rem;
+    color: #aaa;
+    font-size: 0.32rem;
+    border-bottom: solid 1px #f2f2f2;
+  }
+  .nothing {
+    padding: 0.2rem;
+    text-align: center;
+    color: #aaa;
+    font-size: 0.28rem;
+    background-color: transparent !important;
+  }
+}

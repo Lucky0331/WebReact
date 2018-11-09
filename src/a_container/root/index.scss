@@ -1,0 +1,29 @@
+.boss {
+  min-height: 100vh;
+  background-color: #f3f3f3;
+  &.hide {
+    opacity: 0;
+  }
+  & > div {
+    background-color: #f3f3f3;
+  }
+  .am-list-item .am-list-line {
+    padding-left: 15px;
+  }
+  .am-list-item .am-list-line .am-list-content {
+    font-size: 0.34rem;
+  }
+  .am-list-item .am-list-line .am-list-extra {
+    font-size: 0.34rem;
+    flex-basis: auto;
+  }
+  .am-list-item {
+    padding-left: 0 !important;
+  }
+  .am-list-item .am-list-line-multiple {
+    padding: 12.5px 15px;
+  }
+  .am-list-item .am-list-thumb:first-child {
+    margin-left: 15px;
+  }
+}

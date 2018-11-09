@@ -1,0 +1,46 @@
+.page-favcard-detail {
+  background-color: #fff !important;
+  .img-box {
+    position: relative;
+    height: auto;
+    padding: 0.2rem 0;
+    .img {
+      display: block;
+      margin: 0 auto;
+      width: 96%;
+      height: auto;
+    }
+  }
+  .fav-info {
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #222;
+    padding: 5px 10px;
+  }
+  .thefooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 47px;
+    width: 100%;
+    z-index: 10;
+    a {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+    }
+    .am-button-disabled {
+      opacity: 1;
+      background-color: #ccc;
+      &:before {
+        border: none;
+      }
+    }
+  }
+  .other-info {
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #888;
+  }
+}
